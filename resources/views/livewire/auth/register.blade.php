@@ -104,7 +104,7 @@
             <div class="mt-10 pt-8 border-t border-slate-800">
                 <p class="text-center text-sm text-slate-500 font-medium">
                     Already part of the network? 
-                    <a href="/login" class="font-bold text-indigo-400 hover:text-indigo-300">Sign in to Dashboard</a>
+                    <a href="{{ route('login') }}" class="font-bold text-indigo-400 hover:text-indigo-300">Sign in to Dashboard</a>
                 </p>
             </div>
         </div>

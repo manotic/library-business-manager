@@ -12,11 +12,12 @@ use App\Livewire\WifiManager;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('dashboard');
 });
-Route::redirect('/', '/dashboard');
-
 Route::middleware(['auth'])->group(function () {
     Route::get('/wifi', WifiManager::class)->name('wifi');
     Route::get('/library', LibraryManager::class)->name('library');

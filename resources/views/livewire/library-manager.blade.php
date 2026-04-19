@@ -73,8 +73,8 @@
             <h3 class="text-white font-bold mb-4">Add Entry</h3>
             <form wire:submit.prevent="save" class="space-y-4">
                 <select wire:model="type" class="p-3 w-full bg-gray-900 border-gray-700 rounded-lg text-white">
-                    <option value="Movie">Movie</option>
                     <option value="Series">Series</option>
+                    <option value="Movie">Movie</option>
                     <option value="Songs">Songs</option>
                 </select>
                 <input type="number" wire:model="amount" placeholder="Amount" class="p-3 w-full bg-gray-900 border-gray-700 rounded-lg text-white">

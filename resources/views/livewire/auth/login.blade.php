@@ -95,7 +95,7 @@
             <div class="mt-10 pt-8 border-t border-slate-800">
                 <p class="text-center text-sm text-slate-500 font-medium">
                     New to the platform? 
-                    <a href="/register" class="font-bold text-emerald-400 hover:text-emerald-300">Create an account</a>
+                    <a href="{{ route('register') }}" class="font-bold text-emerald-400 hover:text-emerald-300">Create an account</a>
                 </p>
             </div>
             

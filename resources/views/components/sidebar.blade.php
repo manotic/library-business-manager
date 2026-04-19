@@ -16,41 +16,41 @@
             <span>Dashboard</span>
         </a>
 
-        <a href="/wifi" wire:navigate
+        <a href="{{ route('wifi') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('wifi*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="wifi" class="w-5 h-5 mr-3 {{ request()->is('wifi*') ? 'text-indigo-400' : '' }}"></i>
             <span>Wifi</span>
         </a>
 
-        <a href="/library" wire:navigate
+        <a href="{{ route('library') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('library*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="clapperboard"
                 class="w-5 h-5 mr-3 {{ request()->is('library*') ? 'text-indigo-400' : '' }}"></i>
             <span>Library</span>
         </a>
 
-        <a href="/accessories" wire:navigate
+        <a href="{{ route('accessories') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('accessories*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="package-plus"
                 class="w-5 h-5 mr-3 {{ request()->is('accessories*') ? 'text-indigo-400' : '' }}"></i>
             <span>Accessories</span>
         </a>
 
-        <a href="/lendings" wire:navigate
+        <a href="{{ route('lendings') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('lendings*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="hand-coins"
                 class="w-5 h-5 mr-3 {{ request()->is('lendings*') ? 'text-indigo-400' : '' }}"></i>
             <span>Lending</span>
         </a>
 
-        <a href="/out-incomes" wire:navigate
+        <a href="{{ route('out-incomes') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('out-incomes*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="arrow-up-right"
                 class="w-5 h-5 mr-3 {{ request()->is('out-incomes*') ? 'text-indigo-400' : '' }}"></i>
             <span>Out Income</span>
         </a>
 
-        <a href="/expenses" wire:navigate
+        <a href="{{ route('expenses') }}" wire:navigate
             class="flex items-center p-3 rounded-lg transition group {{ request()->is('expenses*') ? 'bg-gray-700 text-white font-bold' : 'text-gray-400 hover:bg-gray-700' }}">
             <i data-lucide="receipt-text"
                 class="w-5 h-5 mr-3 {{ request()->is('expenses*') ? 'text-indigo-400' : '' }}"></i>
