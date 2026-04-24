@@ -10,7 +10,8 @@
         <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl border-l-4 border-l-red-500">
             <p class="text-gray-400 text-[10px] font-bold uppercase">Monthly Expenses</p>
             <p class="text-xl font-black text-white" :class="!privacy && 'blur-md'">
-                {{ number_format($stats['total_spent']) }}</p>
+                {{ number_format($stats['total_spent']) }}
+            </p>
         </div>
         <div class="bg-gray-800 border border-gray-700 p-4 rounded-2xl">
             <p class="text-gray-400 text-[10px] font-bold uppercase">Highest Spending</p>
@@ -64,6 +65,7 @@
                     <option value="Food">Food</option>
                     <option value="Bundle">Bundle</option>
                     <option value="Stock">Stock/Inventory</option>
+                    <option value="Salaries">Salaries</option>
                     <option value="Other">Other</option>
                 </select>
                 <input type="number" wire:model="amount" placeholder="Amount"
@@ -101,7 +103,8 @@
                                     - {{ number_format($record->amount) }}
                                 </td>
                                 <td class="px-4 py-4 text-gray-400 italic text-[11px]">
-                                    {{ $record->description ?? 'No details' }}</td>
+                                    {{ $record->description ?? 'No details' }}
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
